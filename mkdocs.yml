@@ -2,7 +2,7 @@ site_name: My Docs
 site_description: 开源软件设计与分析实验文档
 site_author: 罗浩鸣
 nav:
-  首页: index.md
-  关于: about.md
+  - 首页: index.md
+  - 关于: about.md
 theme:
   name: mkdocs
