@@ -1,0 +1,18 @@
+name: Hello Actions
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Print greeting
+        run: echo "Hello, GitHub Actions!"
+      - name: Show system info
+        run: |
+          echo "Runner OS: $RUNNER_OS"
+          echo "Current time: $(date)"
+          uname -a 
